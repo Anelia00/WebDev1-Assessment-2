@@ -1,0 +1,267 @@
+<!-- 
+This project was created using knowledge gained from lectures, class materials, 
+and online tutorials. External resources were used to support my understanding 
+of HTML, CSS, and JavaScript, but the final implementation has been adapted 
+and written independently. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic page setup-->
+    <meta charset="UTF-8">
+
+    <!-- Makes the site responsive on phones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title (shown in browser tab) -->
+    <title>Milky Way & Planets</title>
+
+    <!-- Linking my CSS file-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Skip link helps keyboard users jump straight to content -->
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
+
+    <!-- Header = top part of the website shown in every page-->
+    <header>
+        <div class="container">
+
+            <!-- Main title of the website -->
+            <h1>BigPlanetarium</h1>
+
+            <!-- Short description of the website -->
+            <p class="tagline">Your gateway to the universe</p>
+
+            <!-- Navigation menu (used on every page) -->
+            <nav aria-label="Main navigation">
+                <ul>
+
+                    <!-- Links between pages -->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="milkyway.html" aria-current="page">Milky Way &amp; Planets</a></li>
+                    <li><a href="saturn.html">Saturn</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="maincontent">
+
+        <!-- MILKY WAY INTRO -->
+        <section class="hero">
+            <div class="container two-column">
+
+                <div>
+
+                    <!--Main title for the Milky Way section-->
+                    <h2>The Milky Way</h2>
+
+                    <!-- Explanation of the Milky Way -->
+                    <p>
+                        The Milky Way is the galaxy that contains our Solar System.
+                        It is made up of billions of stars, gas, and dust held together by gravity.
+                    </p>
+                    <p>
+                        It has a spiral shape, with long arms that curve around a bright centre.
+                        From Earth, it appears as a glowing band across the night sky.
+                    </p>
+                    <p> Our Solar System is located in one of the spiral arms of the Milky Way, far from the centre.
+                        This means we are just a small part of a much larger galaxy that continues to expand and evolve
+                        over time.
+                    </p>
+
+                </div>
+
+                <!-- Image of the Milky Way -->
+                <div>
+                    <img src="images/milkyway1.jpg" alt="The Milky Way galaxy in the night sky">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Fact section(I used cards to make information easier to read) -->
+        <section class="section-box">
+            <div class="container">
+                <h2>Key Facts</h2>
+
+                <div class="card-area">
+                    <div class="card">
+                        <h3>200-400 Billion Stars</h3>
+                        <p>The Milky Way is estimated to contain 200 to 400 billion stars. Our Sun is just one of them -
+                            a perfectly ordinary, medium-sized star.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>100,000 Light-Years Wide</h3>
+                        <p>The galaxy is so vast that light - the fastest thing in the universe - takes 100,000 years
+                            just to travel from one side to the other.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>13.6 Billion Years Old</h3>
+                        <p>The Milky Way formed shortly after the Big Bang, making it almost as old as the universe
+                            itself, which is about 13.8 billion years old.
+
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Black Hole at the Centre</h3>
+                        <p>A supermassive black hole exists at its centre with the mass of about 4 million Suns.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solar System section -->
+        <section class="section-box">
+            <div class="container">
+                <h2>Our Solar System</h2>
+
+                <!-- Description of our Solar System -->
+                <p>
+                    Our Solar System sits inside the Milky Way galaxy, in the Orion Arm. At its centre is our star - the
+                    Sun. Eight planets orbit the Sun, along with dozens of moons, asteroids, and comets.
+
+                <p>The planets are split into two groups. The four smaller, rocky inner planets are Mercury, Venus,
+                    Earth, and Mars. The four larger outer planets are Jupiter, Saturn, Uranus, and Neptune.</p>
+
+
+                </p>
+
+                <!-- Image showing the Solar System -->
+                <img src="images/solarsystem2.jpg" alt="Diagram of the Solar System">
+            </div>
+        </section>
+
+        <!-- Planets section ( I used cards again to break the info for each planet) -->
+        <section class="section-box">
+            <div class="container">
+                <h2>The Eight Planets</h2>
+
+                <!-- Layout for the planet cards -->
+                <div class="card-area">
+
+                    <!--Each planet representing one planet-->
+                    <div class="card">
+                        <h3>Mercury</h3>
+                        <p>The smallest planet and the closest to the Sun. A year on Mercury lasts only 88 Earth days,
+                            but a single day lasts 59 Earth days - it spins very slowly.
+
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Venus</h3>
+                        <p>The hottest planet, reaching 465°C - even hotter than Mercury! Its thick atmosphere traps
+                            heat like a blanket. Venus also spins backwards compared to most planets.
+
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Earth</h3>
+                        <p>The only planet known to support life. Earth has liquid water, a breathable atmosphere, and a
+                            magnetic field that shields us from harmful solar radiation.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Mars</h3>
+                        <p>Called the Red Planet because of its rusty, iron-rich soil. Mars has the tallest volcano in
+                            the Solar System - Olympus Mons - three times taller than Mount Everest.
+
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Jupiter</h3>
+                        <p>The largest planet - over 1,300 Earths could fit inside it. Its famous Great Red Spot is a
+                            storm that has been raging for over 350 years.
+
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Saturn</h3>
+                        <p>Famous for its spectacular ring system made of ice and rock. Saturn is the least dense planet
+                            - it would float on water!</p>
+                        <a href="saturn.html" class="button-link">Learn more</a>
+                    </div>
+
+                    <div class="card">
+                        <h3>Uranus</h3>
+                        <p>An icy planet that rotates on its side - its axis is tilted at 98°, so it rolls around the
+                            Sun like a bowling ball. It has 13 rings and 27 known moons.
+
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Neptune</h3>
+                        <p>The windiest planet - storms reach speeds of 2,100 km/h. Neptune takes 165 Earth years to
+                            complete just one orbit around the Sun.
+
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Video section -->
+        <section class="section-box">
+            <div class="container">
+                <h2>Watch and Learn</h2>
+
+                <!-- Short description of the video -->
+                <p>The Milky Way, Galaxies and Space explained simply. </p>
+
+                <!-- Video element with controls -->
+                <video controls>
+                    <source src="videos/space-video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+
+        <!-- Link to Saturn page -->
+        <section class="section-box">
+            <div class="container">
+                <h2>Want to Go Deeper?</h2>
+                <p>Head to our dedicated Saturn page for a much closer look at one of the most spectacular planets in
+                    our Solar System.
+
+                </p>
+
+                <!-- Button linking to the Saturn page -->
+                <a href="saturn.html" class="button-link">Explore Saturn</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer = bottom part of the website shown in every page-->
+    <footer>
+        <div class="container">
+
+            <!-- Navigation links for the footer -->
+            <p>
+                <a href="index.html">Home</a> |
+                <a href="milkyway.html">Milky Way &amp; Planets</a> |
+                <a href="saturn.html">Saturn</a>
+            </p>
+            <p>&copy; 2026 BigPlanetarium, Bristol</p>
+        </div>
+    </footer>
+
+    <!-- Linking the JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

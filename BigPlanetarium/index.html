@@ -1,0 +1,228 @@
+<!-- 
+This project was created using knowledge gained from lectures, class materials, 
+and online tutorials. External resources were used to support my understanding 
+of HTML, CSS, and JavaScript, but the final implementation has been adapted 
+and written independently. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic page setup -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the site responsive on phones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title (shown in browser tab) -->
+    <title>BigPlanetarium | Home</title>
+
+    <!-- Linking my CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <!-- Skip link helps keyboard users jump straight to content -->
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
+
+    <!-- Header = top part of the website -->
+    <header>
+        <div class="container">
+
+            <!-- Main title of the website -->
+            <h1>BigPlanetarium</h1>
+
+            <!-- Short description of the website -->
+            <p class="tagline">Your gateway to the universe</p>
+
+            <!-- Navigation menu (used on every page) -->
+            <nav aria-label="Main navigation">
+                <ul>
+
+                    <!-- Links between pages -->
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="milkyway.html">Milky Way &amp; Planets</a></li>
+                    <li><a href="saturn.html">Saturn</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content of the page -->
+    <main id="maincontent">
+
+        <!-- Hero section (first thing users see) -->
+        <section class="hero">
+            <div class="container two-column">
+
+                <!-- Left side text -->
+                <div>
+
+                    <h2>Welcome to BigPlanetarium</h2>
+
+                    <!-- Intro paragraph explaining the purpose -->
+                    <p>
+                        We are a Bristol-based planetarium dedicated to bringing the wonders of space to everyone. We
+                        aim to make learning about the universe enjoyable, interesting, and easy to understand. Whether
+                        you are a curious learner or simply fascinated by the stars, this website is here to
+                        help you explore and learn.
+                    </p>
+
+                    <!-- Secondary paragraph -->
+                    <p>
+                        Explore the Milky Way, learn about the planets, and discover more about Saturn through images,
+                        video, and interactive features.
+                    </p>
+
+                    <!-- Button that links to another page -->
+                    <a href="milkyway.html" class="button-link">
+                        Explore the Milky Way
+                    </a>
+
+                </div>
+
+                <!-- Right side image -->
+                <div>
+
+                    <!-- Image with alt text for accessibility -->
+                    <img src="images/milkyway-hero.jpg" alt="The Milky Way galaxy stretching across the night sky">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About section -->
+        <section class="section-box">
+            <div class="container two-column">
+
+                <div>
+
+                    <h2>Who Are We?</h2>
+
+                    <!-- Explaining what the organization does -->
+                    <p>
+                        BigPlanetarium is based in the heart of Bristol. We offer dome shows,
+                        interactive exhibits, and live telescope sessions for the public and
+                        for schools.
+                    </p>
+
+                    <!-- Making it friendly and accessible -->
+                    <p>
+                        We believe science is for everyone. No experience needed - just bring
+                        your curiosity!
+                    </p>
+
+                    <!-- List of key information -->
+                    <ul class="info-list">
+                        <li>Located in central Bristol</li>
+                        <li>Open Mon-Fri 9am-6pm, Sat-Sun 10am-8pm</li>
+                        <li>Free entry for under 12s</li>
+                        <li>Special school group rates available</li>
+                    </ul>
+                </div>
+
+                <!-- Image showing the planetarium -->
+                <div>
+                    <img src="images/planetarium-space.jpg"
+                        alt="A colourful space scene with stars and glowing light appearing in the planetarium">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Interactive Fact Section (JavaScript feature) -->
+        <section class="section-box">
+            <div class="container">
+
+                <h2>Did You Know?</h2>
+
+                <!-- Instruction for the user-->
+                <p>Click the button below to reveal a space fact.</p>
+
+                <!-- Button triggers the JavaScript function -->
+                <button id="factBtn" aria-describedby="factOutput">Show a space fact</button>
+
+                <!--Output for the space fact -->
+                <p id="factOutput"></p>
+            </div>
+        </section>
+
+        <!-- Video section -->
+        <section class="section-box">
+            <div class="container">
+
+                <h2>Watch and Learn</h2>
+
+                <!-- Description of the video -->
+                <p>The whole universe explained simply.</p>
+
+                <video controls>
+                    <source src="videos/TheWholeUniverse.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+
+        <!-- Links section to help users navigate to other pages easily -->
+        <section class="section-box">
+            <div class="container">
+
+                <!-- Heading for the links section -->
+                <h2>Explore the Site</h2>
+
+                <!-- Cards used to organise links visually-->
+                <div class="card-area">
+
+                    <!-- Card for Milky Way & Planets -->
+                    <div class="card">
+                        <h3>Milky Way &amp; Planets</h3>
+
+                        <!-- Short description of what the page contains-->
+                        <p>Discover our galaxy and meet all eight planets in our Solar System - from tiny Mercury to
+                            distant Neptune.</p>
+
+                        <!-- Button to navigate to the page -->
+                        <a href="milkyway.html" class="button-link">Go</a>
+                    </div>
+
+                    <!-- Second card linking to Saturn page-->
+                    <div class="card">
+                        <h3>Saturn</h3>
+
+                        <!-- Short description of what Saturn page contains-->
+                        <p>Take a closer look at Saturn - its famous rings, its moons, and some incredible facts about
+                            the planet.</p>
+
+                        <!-- Button to navigate to Saturn page-->
+                        <a href="saturn.html" class="button-link">Go</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer section showwn at the bottom of every page -->
+    <footer>
+        <div class="container">
+
+            <!-- Navigation links repeated for easier access-->
+            <p>
+                <a href="index.html">Home</a> |
+                <a href="milkyway.html">Milky Way &amp; Planets</a> |
+                <a href="saturn.html">Saturn</a>
+            </p>
+
+            <!-- Copyright information -->
+            <p>&copy; 2026 BigPlanetarium, Bristol</p>
+        </div>
+    </footer>
+
+    <!--Linking JavaScript for interactive features -->
+    <script src="script.js"></script>
+</body>
+
+</html>

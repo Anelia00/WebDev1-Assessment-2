@@ -1,0 +1,183 @@
+/*
+This project was created using knowledge gained from lectures, class materials, 
+and online tutorials. External resources were used to support my understanding 
+of HTML, CSS, and JavaScript, but the final implementation has been adapted 
+and written independently. 
+*/
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BASE */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b1026;
+    color: white;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+/* CONTAINER */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* HEADER + FOOTER */
+header, footer {
+    background-color: #111633;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.tagline {
+    color: #ccc;
+    margin-bottom: 12px;
+}
+
+/* NAV */
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ACCESSIBILITY IMPROVEMENT (FOCUS FOR KEYBOARD USERS) */
+a:focus,
+button:focus {
+    outline: 3px solid #ffffff;
+    outline-offset: 3px;
+}
+
+/* SECTIONS */
+.hero, .section-box {
+    padding: 60px 0;
+}
+
+/* TWO COLUMN */
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* IMAGES + VIDEO */
+img, video {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+/* BUTTONS */
+.button-link, button {
+    background-color: #7b5cff;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    margin-top: 12px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.button-link:hover,
+button:hover {
+    background-color: #9982ff;
+}
+
+/* CARDS */
+.card-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #1a2045;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* LIST */
+.info-list {
+    margin-top: 15px;
+}
+
+.info-list li {
+    margin-bottom: 8px;
+}
+
+/* FACT TEXT */
+#factOutput,
+#saturnOutput {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* HEADINGS */
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+/* SKIP LINK */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+}
+
+.skip-link:focus {
+    left: 10px;
+    background: white;
+    color: black;
+    padding: 8px;
+}
+
+/* MOBILE */
+/* To ensure the website is responsive on different screen sizes, I used CSS media queries to adjust the layout for smaller devices (MDN Web Docs, n.d.).*/
+
+@media (max-width: 768px) {
+    .two-column,
+    .card-area {
+        grid-template-columns: 1fr;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+}

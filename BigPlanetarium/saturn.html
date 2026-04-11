@@ -1,0 +1,253 @@
+<!-- 
+This project was created using knowledge gained from lectures, class materials, 
+and online tutorials. External resources were used to support my understanding 
+of HTML, CSS, and JavaScript, but the final implementation has been adapted 
+and written independently. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic page setup-->
+    <meta charset="UTF-8">
+
+    <!-- Makes the site responsive on phones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title (shown in browser tab) -->
+    <title>Saturn</title>
+
+    <!-- Linking my CSS file-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Skip link helps keyboard users jump straight to content -->
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
+
+    <!-- Header section - same on all pages for consistency-->
+    <header>
+        <div class="container">
+
+            <!-- Website title -->
+            <h1>BigPlanetarium</h1>
+
+            <!-- Short description of the website -->
+            <p class="tagline">Your gateway to the universe</p>
+
+            <!-- Navigation menu -->
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="milkyway.html">Milky Way &amp; Planets</a></li>
+                    <li><a href="saturn.html" aria-current="page">Saturn</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Main content area -->
+    <main id="maincontent">
+
+        <!-- Hero section that has the title and the main image-->
+        <section class="hero">
+            <div class="container">
+
+                <!-- Page title -->
+                <h2>Saturn</h2>
+
+                <!-- Short introduction -->
+                <p>The jewel of our Solar System - famous for its spectacular ring system</p>
+
+                <!-- Main image of Saturn -->
+                <img src="images/saturn111.jpg" alt="Saturn with its rings">
+            </div>
+        </section>
+
+        <!-- Section with information about Saturn -->
+        <section class="section-box">
+            <div class="container">
+                <h2>What Is Saturn?</h2>
+                <p>
+                    Saturn is the sixth planet from the Sun and the second largest in our
+                    Solar System, after Jupiter. It is a gas giant -
+                    it has no solid surface. If you tried to land on it, you would just
+                    sink through layers of gas and liquid.
+                </p>
+                <p>
+                    What makes Saturn instantly recognisable is its stunning
+                    ring system. The rings are made of billions of
+                    pieces of ice and rock, ranging from tiny grains to chunks as
+                    large as a house.
+                </p>
+                <p>
+                    Saturn is also the least dense planet in our Solar
+                    System - less dense than water, which means it would actually float
+                    if you put it in a big enough ocean!
+                </p>
+            </div>
+        </section>
+
+        <!-- Fact cards used to organise key information -->
+        <section class="section-box">
+            <div class="container">
+                <h2>Saturn at a Glance</h2>
+
+                <!-- Each card representing a key fact about Saturn -->
+                <div class="card-area">
+                    <div class="card">
+                        <h3>Size</h3>
+                        <p>Saturn is about 9 times wider than Earth. You could fit over 760 Earths inside Saturn - it is
+                            truly enormous.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>A Year on Saturn</h3>
+                        <p>One full orbit around the Sun takes Saturn 29.5 Earth years. However, a single day on Saturn
+                            lasts only 10.7 hours - it spins very fast.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Temperature</h3>
+                        <p>The cloud tops on Saturn can reach about -178°C, making it an extremely cold planet.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Density</h3>
+                        <p>Saturn is the only planet in the Solar System that is less dense than water - it would float
+                            if you had an ocean big enough!.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Moons</h3>
+                        <p>Saturn has 146 known moons - more than any other planet. Its largest moon, Titan, is bigger
+                            than the planet Mercury.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Rings</h3>
+                        <p>Saturn's rings stretch up to 282,000 km from the planet but are only about 10 to 100 metres
+                            thick - remarkably thin for something so wide.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-box">
+            <div class="container two-column">
+
+                <!-- Image of Saturn's rings -->
+                <div>
+                    <img src="images/saturn-rings.jpg" alt="A closer view of Saturn's rings">
+                </div>
+
+
+                <!-- Text content about Saturn's rings -->
+                <div>
+                    <h2>Saturn's Rings</h2>
+                    <p>
+                        Saturn has seven main ring groups, labelled A through G. The most
+                        visible are the A, B, and C rings.
+                    </p>
+                    <p>
+                        The rings are made mainly of water ice, with smaller amounts of dust
+                        and rock. Scientists think they may be the remains of a comet,
+                        asteroid, or moon that broke apart long ago.
+                    </p>
+                    <p>
+                        The rings are also slowly disappearing as Saturn's gravity pulls ring
+                        material inward.They could be completely gone in around 100 million years.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Famous Moons of Saturn -->
+        <section class="section-box">
+            <div class="container">
+                <h2>Famous Moons of Saturn</h2>
+
+                <div class="card-area">
+                    <div class="card">
+                        <h3>Titan</h3>
+                        <p>Saturn's largest moon. Titan has a thick atmosphere and lakes of liquid methane on its
+                            surface.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Enceladus</h3>
+                        <p>This icy moon sends plumes of water vapour into space and may have a liquid ocean below its
+                            surface.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Iapetus</h3>
+                        <p>Iapetus is known for its unusual appearance, with one side much darker than the other.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive section with a button to reveal a fact about Saturn done by using JavaScript -->
+        <section class="section-box">
+            <div class="container">
+                <h2>Did You Know?</h2>
+
+                <!-- Instruction-->
+                <p>Click the button below to reveal a Saturn fact.</p>
+
+                <!-- Button that triggers the JavaScript function to show a fact about Saturn -->
+                <button id="saturnBtn" aria-describedby="saturnOutput">Show a fact</button>
+
+                <!-- Paragraph where the fact will be displayed when the button is clicked -->
+                <p id="saturnOutput"></p>
+            </div>
+        </section>
+
+        <!-- Section with a video about Saturn -->
+        <section class="section-box">
+            <div class="container">
+                <h2>Watch and Learn</h2>
+                <p>This video helps visitors learn more about Saturn.</p>
+
+                <video controls>
+                    <source src="videos/saturn.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <!-- Navigation back links-->
+        <section class="section-box">
+            <div class="container">
+                <h2>Keep Exploring</h2>
+                <p>Head back to see all the planets or return to the home page.</p>
+
+                <!-- Links styled as buttons to navigate to other pages -->
+                <a href="milkyway.html" class="button-link">Milky Way &amp; Planets</a>
+                <a href="index.html" class="button-link">Home</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer that stays the same across all pages-->
+    <footer>
+        <div class="container">
+            <p>
+                <!-- Navigation links repeated and copyright information -->
+                <a href="index.html">Home</a> |
+                <a href="milkyway.html">Milky Way &amp; Planets</a> |
+                <a href="saturn.html">Saturn</a>
+            </p>
+            <p>&copy; 2026 BigPlanetarium, Bristol</p>
+        </div>
+    </footer>
+
+    <!-- Linking the JavaScript file that contains the code for the interactive button -->
+    <script src="script.js"></script>
+</body>
+
+</html>
